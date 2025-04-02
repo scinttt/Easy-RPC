@@ -1,6 +1,7 @@
 package com.creaturelove;
 
 import com.creaturelove.model.User;
+import com.creaturelove.proxy.ServiceProxyFactory;
 import com.creaturelove.service.UserService;
 
 /**
@@ -11,7 +12,7 @@ public class ConsumerServer
 {
     public static void main( String[] args )
     {
-        UserService userService = null;
+        UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
         user.setName("Creaturelove");
 
