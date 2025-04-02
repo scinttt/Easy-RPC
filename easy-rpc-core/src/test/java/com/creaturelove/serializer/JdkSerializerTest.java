@@ -1,17 +1,13 @@
-package com.creaturelove;
+package com.creaturelove.serializer;
 
-import com.creaturelove.serializer.JdkSerializer;
-import com.creaturelove.serializer.Serializer;
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 import java.io.IOException;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class JdkSerializerTest
     extends TestCase
 {
     public void testSerializer() throws IOException {
