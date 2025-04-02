@@ -1,0 +1,27 @@
+package com.creaturelove;
+
+import com.creaturelove.model.User;
+import com.creaturelove.service.UserService;
+
+/**
+ * Hello world!
+ *
+ */
+public class ConsumerServer
+{
+    public static void main( String[] args )
+    {
+        UserService userService = null;
+        User user = new User();
+        user.setName("Creaturelove");
+
+        // call provider
+        User newUser = userService.getUser(user);
+
+        if(newUser != null){
+            System.out.println(newUser.getName());
+        }else{
+            System.out.println("User doesn't exist");
+        }
+    }
+}
