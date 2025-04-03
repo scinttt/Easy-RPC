@@ -24,3 +24,9 @@
 - Executes the requested method and returns the result to be packaged into RPC response
 
 ![Blank diagram (2)](https://github.com/user-attachments/assets/6a93cc26-5892-436b-a743-514ccab9db7a)
+
+# How to Use
+- Design the model and service in the consumer
+- Register the service to localregistry in the provider
+- Execute the provider
+- Execute the consumer
